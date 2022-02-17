@@ -40,6 +40,10 @@
             "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
             "allowSeparatedGroups": false
           }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          { "argsIgnorePattern": "^_" }
         ]
       }
     },

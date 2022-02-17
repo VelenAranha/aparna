@@ -1,0 +1,18 @@
+.app-badge-content {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transform: translate(8px, -8px);
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  background-color: brown;
+  height: 16px;
+  width: 16px;
+  font-size: 12px;
+  color: #fff;
+}
