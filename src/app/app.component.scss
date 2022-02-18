@@ -1,4 +1,12 @@
 .container {
-  max-width: 1200px;
-  margin: 24px;
+  background: url('../assets/Images/inspect/weather/Web/01_Home/background/background.png');
+  height: 688px;
+  width: 1200px;
+}
+.grid {
+  position: relative;
+  width: 960px;
+  height: 688px;
+  //  border: 1px solid black;
+  margin: 0 auto;
 }

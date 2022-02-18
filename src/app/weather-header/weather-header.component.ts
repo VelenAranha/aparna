@@ -7,4 +7,14 @@ import { Component } from '@angular/core'
 })
 export class WeatherHeaderComponent {
   constructor() {}
+
+  public date = new Date()
+
+  id: any = 'home'
+
+  tabChange(ids: any) {
+    this.id = ids
+
+    console.log(this.id)
+  }
 }

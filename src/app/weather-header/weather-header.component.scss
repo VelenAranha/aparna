@@ -1,0 +1,61 @@
+.header{
+position: absolute;
+top:126px;
+height: 424px;
+width: 960px;
+ border-bottom: 1px solid rgb(177, 173, 173);
+margin: 0 auto;
+
+// display: flex;
+
+}
+.tab{
+    border-bottom: 1px solid rgb(177, 173, 173);
+    height: 45px;
+   
+   
+}
+.tab a{
+
+text-decoration: none;
+color: white;
+font-size: 13px;
+letter-spacing: 0;
+line-height: 41px;
+padding: 14px 24px;
+}
+
+.tab a:hover {
+   color: yellow;
+   border-bottom: 3px solid yellow;
+  }
+  
+  .tab a.active {
+    border-bottom: 2px solid yellow;
+  }
+  .date{
+     margin-left: 404px;
+  }
+
+
+.tab a.date:hover{
+display: none;
+}
+
+.content p{
+  color:white
+}
+.icon_nothing{
+  height: 84px;
+  width: 159px;
+  top: 176px;
+  left:397px;
+  position: absolute;
+}
+.content-favourite{
+  top:322px;
+  left: 521px;
+  
+}
+
+
