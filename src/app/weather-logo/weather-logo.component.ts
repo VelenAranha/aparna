@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-weather-logo',
   templateUrl: './weather-logo.component.html',
   styleUrls: ['./weather-logo.component.scss'],
 })
-export class WeatherLogoComponent implements OnInit {
+export class WeatherLogoComponent {
   constructor() {}
-
-  ngOnInit(): void {}
 }
