@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "weather-header.component.scss"
+    ],
+    "names": [],
+    "file": "weather-header.component.css"
+}

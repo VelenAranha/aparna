@@ -1,0 +1,73 @@
+.header{
+position: absolute;
+top:126px;
+height: 424px;
+ width: 960px;
+ border-bottom: 1px solid rgb(177, 173, 173);
+margin: 0 auto;
+
+// display: flex;
+
+}
+.tab{
+    border-bottom: 1px solid rgb(177, 173, 173);
+    height: 45px;
+    //Remove width in tab.
+   
+}
+.tab a{
+
+text-decoration: none;
+color: white;
+font-size: 13px;
+letter-spacing: 0;
+line-height: 41px;
+padding: 14px 24px;
+}
+
+.tab a:hover {
+   color: yellow;
+   border-bottom: 3px solid yellow;
+  }
+  
+  .tab a.active {
+    border-bottom: 2px solid yellow;
+  }
+  .date{
+  
+    float: right;
+    font-size: 13px;
+letter-spacing: 0;
+line-height: 41px;
+padding: 14px 24px;
+
+  }
+
+
+.tab a.date:hover{
+display: none;
+}
+
+.content p{
+  color:white
+}
+
+.content-favourite .fav-icon-nothing,.content-recentsearch .fav-icon-recentsearch{
+  position: absolute;
+  top:176px;
+  left: 397px;
+  width: 159px;
+  height: 84px;
+}
+
+.content-favourite .fav-text-nothing, .content-recentsearch .search-text-nothing{
+  position: absolute;
+  top:290px;
+  // Actual left: 397px;
+  left: 406px;
+   size: 18px;
+  line-height: 21px;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: 400;
+}
