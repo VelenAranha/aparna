@@ -1,17 +1,22 @@
- 
-
-
-.container{
-    // background: url("../assets/Images/inspect/weather/Web/01_Home/background/background.png") ;
-    background-image: linear-gradient(to right, rgba(117, 35, 218, 0.68),rgba(218, 78, 223, 0.68) );
-        height: 688px;
-    width: 1200px;
+.container {
+  // background: url("../assets/Images/inspect/weather/Web/01_Home/background/background.png") ;
+  background: linear-gradient(to bottom, #5d3ea7, #5d5ece, #5d5fd0, #5d55c9);
+  background: linear-gradient(to right, #5d5bcc, #8b75ce, #ae74bc, #ae5c9a);
+  height: 688px;
+  width: 1200px;
 }
-.grid{
-    position: relative;
-    width: 960px;
-    height: 688px;
-    //  border: 1px solid black;
-    margin: 0 auto;
+.grid {
+  position: relative;
+  width: 960px;
+  height: 688px;
+  //  border: 1px solid black;
+  margin: 0 auto;
 }
-
+.props_container {
+  position: relative;
+  top: 552px;
+  height: 136px;
+  display: inline-block;
+  padding: 44px 44px;
+  vertical-align: middle;
+}

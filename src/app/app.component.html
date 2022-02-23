@@ -1,9 +1,10 @@
 <div class="container">
-    
-
-<div class="grid">  
+  <div class="grid">
     <app-weather-logo></app-weather-logo>
     <app-weather-search-bar></app-weather-search-bar>
     <app-weather-header></app-weather-header>
-</div> 
+    <div *ngFor="let data of properties" class="props_container">
+      <app-weather-details [props]="data"></app-weather-details>
+    </div>
+  </div>
 </div>

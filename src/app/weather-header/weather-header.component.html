@@ -1,9 +1,27 @@
 <div class="header">
   <div class="tab">
-    <a href="#home" id="home" (click)="tabChange('home')" [ngClass]="{active:id==='home'}">HOME</a>
-    <a href="#favourite" id="favouite" (click)="tabChange('favourite')" [ngClass]="{active:id==='favouite'}">FAVOURITE</a>
-    <a href="#recentsearch" id="recentsearch" (click)="tabChange('recentsearch')" [ngClass]="{active:id==='recentsearch'}">RECENT SEARCH</a>
-    <a class="date">{{ date | date: 'medium' }}</a>
+    <a
+      href="#home"
+      id="home"
+      (click)="tabChange('home')"
+      [ngClass]="{ active: id === 'home' }"
+      >HOME</a
+    >
+    <a
+      href="#favourite"
+      id="favouite"
+      (click)="tabChange('favourite')"
+      [ngClass]="{ active: id === 'favouite' }"
+      >FAVOURITE</a
+    >
+    <a
+      href="#recentsearch"
+      id="recentsearch"
+      (click)="tabChange('recentsearch')"
+      [ngClass]="{ active: id === 'recentsearch' }"
+      >RECENT SEARCH</a
+    >
+    <p class="date">{{ date | date: 'medium' }}</p>
   </div>
 
   <div class="content">
@@ -11,19 +29,25 @@
       <p>Home</p>
     </div>
     <div class="content-favourite" *ngIf="id === 'favourite'">
-      <p><img  class="fav-icon-nothing" src="../../assets/Images/inspect/weather/Web/03_Favourite_blank/Group 38/Group 3/icon_nothing.png"></p>
+      <p>
+        <img
+          class="fav-icon-nothing"
+          src="../../assets/Images/inspect/weather/Web/03_Favourite_blank/Group 38/Group 3/icon_nothing.png"
+        />
+      </p>
       <p class="fav-text-nothing">No Favourites added</p>
     </div>
     <div class="content-recentsearch" *ngIf="id === 'recentsearch'">
-      <p><img class="fav-icon-recentsearch" src="../../assets/Images/inspect/weather/Web/03_Favourite_blank/Group 38/Group 3/icon_nothing.png"></p>
+      <p>
+        <img
+          class="fav-icon-recentsearch"
+          src="../../assets/Images/inspect/weather/Web/03_Favourite_blank/Group 38/Group 3/icon_nothing.png"
+        />
+      </p>
       <p class="search-text-nothing">No Searches added</p>
     </div>
-  </div>  
+  </div>
 </div>
- 
-
-
-
 
 <!-- 
 <script>
