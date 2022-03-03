@@ -4,8 +4,8 @@
 .icon img {
   margin-right: 12px;
   position: relative;
-     left: 2px;
-     top: 6px;
+  left: 2px;
+  top: 6px;
 }
 // .weatherawidgetRow5{
 //   position: absolute;
@@ -22,7 +22,7 @@
   padding: 44px 44px;
   vertical-align: middle;
 }
-.weather-details{
+.weather-details {
   position: absolute;
   top: 615px;
   font-family: 'Roboto', sans-serif;
@@ -31,33 +31,28 @@
   color: white;
   font-size: 20px;
 }
-.weatherawidgetRow1{
+.weatherawidgetRow1 {
   position: relative;
-  left:75px;
-  top:5px;
-  
+  left: 75px;
+  top: 5px;
 }
-.weatherawidgetRow2{
+.weatherawidgetRow2 {
   position: absolute;
-  top:3px;
-  left:270px;
-  
+  top: 3px;
+  left: 270px;
 }
-.weatherawidgetRow3{
-  position: absolute;
- 
-  left:485px;
-  
-}
-.weatherawidgetRow4{
-  position: absolute;
- 
-  left:680px;
-  
-}
-.weatherawidgetRow5{
+.weatherawidgetRow3 {
   position: absolute;
 
-  left:830px;
-  
+  left: 485px;
+}
+.weatherawidgetRow4 {
+  position: absolute;
+
+  left: 680px;
+}
+.weatherawidgetRow5 {
+  position: absolute;
+
+  left: 830px;
 }

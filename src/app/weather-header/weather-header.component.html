@@ -33,11 +33,7 @@
         [class.color]="isColored"
         (click)="changeColor()"
       ></span>
-      <div class="fav"
-        
-      >
-        Add to favourite
-      </div>
+      <div class="fav">Add to favourite</div>
       <div class="temp-measure">{{ WeatherData.temp_celcius }} {{ dataf }}</div>
       <div class="tempprops">
         <button class="degree" (click)="displayCelcius($event.target)">
@@ -47,24 +43,24 @@
           &#8457;
         </button>
       </div>
-      <div *ngIf="WeatherData.icon == '04n'">
+      <div *ngIf="WeatherData.icon === '04n'">
         <p class="text">{{ WeatherData.desp | titlecase }}</p>
         <img src="http://openweathermap.org/img/wn/04n@4x.png" class="icon" />
       </div>
-      <div *ngIf="WeatherData.icon == '04d'">
+      <div *ngIf="WeatherData.icon === '04d'">
         <p class="text">{{ WeatherData.desp | titlecase }}</p>
 
         <img src="http://openweathermap.org/img/wn/04d@4x.png" class="icon" />
       </div>
-      <div *ngIf="WeatherData.icon == '50d'">
+      <div *ngIf="WeatherData.icon === '50d'">
         <p class="text">{{ WeatherData.desp | titlecase }}</p>
         <img src="http://openweathermap.org/img/wn/50d@4x.png" class="icon" />
       </div>
-      <div *ngIf="WeatherData.icon == '01d'">
+      <div *ngIf="WeatherData.icon === '01d'">
         <p class="text">{{ WeatherData.desp | titlecase }}</p>
         <img src="http://openweathermap.org/img/wn/01d@4x.png" class="icon" />
       </div>
-      <div *ngIf="WeatherData.icon == '02d'">
+      <div *ngIf="WeatherData.icon === '02d'">
         <p class="text">{{ WeatherData.desp | titlecase }}</p>
         <img src="http://openweathermap.org/img/wn/02d@4x.png" class="icon" />
       </div>
