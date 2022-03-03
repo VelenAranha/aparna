@@ -1,3 +1,6 @@
+@import '~/weather/aparna/node_modules/bootstrap/dist/css/bootstrap.css';
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 .header {
   position: absolute;
   top: 126px;
@@ -59,4 +62,54 @@ a.active {
   letter-spacing: 0;
   text-align: center;
   font-weight: 400;
+}
+.icon{
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  left: 380px;
+}
+.text{
+  position: absolute;
+  top: 350px;
+  left: 430px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+.weather_name{
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  top:80px;
+}
+.tempprops {
+  position: absolute;
+  top: 64%;
+  left: 53%;
+  padding: 20px;
+
+
+} 
+.temp-measure{
+  color: white;
+  font-size: 70px;
+  position: absolute;
+top: 250px;
+left: 443px;
+}
+.tempprops button{
+  background-color: transparent;
+  color: white;
+}
+.color{
+  color: #FAD05B;
+}
+.fav{
+  color: white;
+          margin-left: 30px;
+          position: absolute;
+          top: 122px;
+          left: 20px;
+          font-size: 14px;
 }
