@@ -1,0 +1,13 @@
+<div *ngFor="let data of properties" class="props_container">
+  <p class="icon text"><img src="{{ data.iconUrl }}" />{{ data.text }}</p>
+</div>
+
+<div class="weather-details">
+  <p class="weatherawidgetRow1">
+    {{ WeatherData.temp_min }}&#8451;-{{ WeatherData.temp_max }} &#8451;
+  </p>
+  <p class="weatherawidgetRow2">{{ WeatherData.main.humidity }}%</p>
+  <p class="weatherawidgetRow3">{{ WeatherData.main.humidity }}%</p>
+  <p class="weatherawidgetRow4">{{ WeatherData.temp_wind }}mph</p>
+  <p class="weatherawidgetRow5">{{ WeatherData.temp_visibility }}mph</p>
+</div>

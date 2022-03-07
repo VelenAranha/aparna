@@ -1,0 +1,88 @@
+<div class="header">
+  <div class="tab">
+    <a
+      href="#home"
+      id="home"
+      (click)="tabChange('home')"
+      [ngClass]="{ active: id === 'home' }"
+      >HOME</a
+    >
+    <a
+      href="#favourite"
+      id="favouite"
+      (click)="tabChange('favourite')"
+      [ngClass]="{ active: id === 'favouite' }"
+      >FAVOURITE</a
+    >
+    <a
+      href="#recentsearch"
+      id="recentsearch"
+      (click)="tabChange('recentsearch')"
+      [ngClass]="{ active: id === 'recentsearch' }"
+      >RECENT SEARCH</a
+    >
+    <p class="date">{{ date | date: 'medium' }}</p>
+  </div>
+
+  <div class="content">
+    <div class="content-home" *ngIf="id === 'home'">
+      <p class="weather_name">{{ WeatherData.name }}</p>
+      <span
+        class="fa fa-heart"
+        style="font-size: 24px; position: absolute; top: 120px; left: 16px"
+        [class.color]="isColored"
+        (click)="changeColor()"
+      ></span>
+      <div class="fav">Add to favourite</div>
+      <div class="temp-measure">{{ WeatherData.temp_celcius }} {{ dataf }}</div>
+      <div class="tempprops">
+        <button class="degree" (click)="displayCelcius($event.target)">
+          &#8451;
+        </button>
+        <button class="farenheit" (click)="displayFarenheit($event.target)">
+          &#8457;
+        </button>
+      </div>
+      <div *ngIf="WeatherData.icon === '04n'">
+        <p class="text">{{ WeatherData.desp | titlecase }}</p>
+        <img src="http://openweathermap.org/img/wn/04n@4x.png" class="icon" />
+      </div>
+      <div *ngIf="WeatherData.icon === '04d'">
+        <p class="text">{{ WeatherData.desp | titlecase }}</p>
+
+        <img src="http://openweathermap.org/img/wn/04d@4x.png" class="icon" />
+      </div>
+      <div *ngIf="WeatherData.icon === '50d'">
+        <p class="text">{{ WeatherData.desp | titlecase }}</p>
+        <img src="http://openweathermap.org/img/wn/50d@4x.png" class="icon" />
+      </div>
+      <div *ngIf="WeatherData.icon === '01d'">
+        <p class="text">{{ WeatherData.desp | titlecase }}</p>
+        <img src="http://openweathermap.org/img/wn/01d@4x.png" class="icon" />
+      </div>
+      <div *ngIf="WeatherData.icon === '02d'">
+        <p class="text">{{ WeatherData.desp | titlecase }}</p>
+        <img src="http://openweathermap.org/img/wn/02d@4x.png" class="icon" />
+      </div>
+    </div>
+
+    <div class="content-favourite" *ngIf="id === 'favourite'">
+      <p>
+        <img
+          class="fav-icon-nothing"
+          src="../../assets/Images/inspect/weather/Web/03_Favourite_blank/Group 38/Group 3/icon_nothing.png"
+        />
+      </p>
+      <p class="fav-text-nothing">No Favourites added</p>
+    </div>
+    <div class="content-recentsearch" *ngIf="id === 'recentsearch'">
+      <p>
+        <img
+          class="fav-icon-recentsearch"
+          src="../../assets/Images/inspect/weather/Web/03_Favourite_blank/Group 38/Group 3/icon_nothing.png"
+        />
+      </p>
+      <p class="search-text-nothing">No Searches added</p>
+    </div>
+  </div>
+</div>
